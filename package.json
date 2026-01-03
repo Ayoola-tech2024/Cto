@@ -1,0 +1,21 @@
+{
+  "name": "ideate",
+  "version": "1.0.0",
+  "description": "AI-enhanced ideas and notes app with real-time collaboration",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "db:init": "cd backend && node scripts/init-db.js"
+  },
+  "keywords": ["ideas", "notes", "ai", "gemini", "collaboration"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
