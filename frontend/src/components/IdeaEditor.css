@@ -1,0 +1,77 @@
+.idea-editor {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.save-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.readonly-badge {
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.editor-title {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.editor-title:focus {
+  border-bottom-color: #667eea;
+}
+
+.editor-title:disabled {
+  opacity: 0.7;
+}
+
+.editor-content {
+  width: 100%;
+  min-height: 400px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.editor-content:disabled {
+  opacity: 0.7;
+}
+
+.editor-content::placeholder,
+.editor-title::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
